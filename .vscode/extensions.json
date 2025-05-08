@@ -1,0 +1,17 @@
+{
+  "recommendations": [
+    "ms-vscode.vscode-typescript-tslint-plugin",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "editorconfig.editorconfig",
+    "eamodio.gitlens",
+    "ms-vscode.powershell",
+    "rbbit.typescript-hero",
+    "christian-kohler.path-intellisense",
+    "wallabyjs.quokka-vscode",
+    "msjsdiag.debugger-for-chrome",
+    "shaharkazaz.git-merger",
+    "joelday.docthis",
+    "eg2.vscode-npm-script"
+  ]
+}
