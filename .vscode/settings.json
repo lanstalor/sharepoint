@@ -1,32 +1,14 @@
+// Place your settings in this file to overwrite default and user settings.
 {
-  "typescript.tsdk": "node_modules\\typescript\\lib",
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "files.associations": {
-    "*.scss": "scss"
-  },
-  "emmet.includeLanguages": {
-    "typescript": "html",
-    "typescriptreact": "html"
-  },
-  "files.eol": "\n",
+  // Configure glob patterns for excluding files and folders in the file explorer.
   "files.exclude": {
     "**/.git": true,
     "**/.DS_Store": true,
-    "**/node_modules": true,
-    "**/lib": false,
-    "**/dist": false,
-    "**/temp": true
+    "**/bower_components": true,
+    "**/coverage": true,
+    "**/jest-output": true,
+    "**/lib-amd": true,
+    "src/**/*.scss.ts": true
   },
-  "search.exclude": {
-    "**/node_modules": true,
-    "**/lib": true,
-    "**/dist": true,
-    "**/temp": true
-  },
-  "editor.tabSize": 2,
-  "editor.detectIndentation": false,
-  "git.ignoreLimitWarning": true
+  "typescript.tsdk": ".\\node_modules\\typescript\\lib"
 }

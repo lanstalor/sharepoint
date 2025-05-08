@@ -2,11 +2,11 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Localhost",
-      "type": "chrome",
+      "name": "Hosted workbench",
+      "type": "msedge",
       "request": "launch",
-      "url": "https://localhost:4321/temp/workbench.html",
-      "webRoot": "${workspaceFolder}",
+      "url": "https://{tenantDomain}/_layouts/workbench.aspx",
+      "webRoot": "${workspaceRoot}",
       "sourceMaps": true,
       "sourceMapPathOverrides": {
         "webpack:///.././src/*": "${webRoot}/src/*",
@@ -16,25 +16,7 @@
       },
       "runtimeArgs": [
         "--remote-debugging-port=9222",
-        "--user-data-dir=${workspaceFolder}/.vscode/chrome"
-      ]
-    },
-    {
-      "name": "SharePoint Online",
-      "type": "chrome",
-      "request": "launch",
-      "url": "https://your-tenant.sharepoint.com/_layouts/workbench.aspx",
-      "webRoot": "${workspaceFolder}",
-      "sourceMaps": true,
-      "sourceMapPathOverrides": {
-        "webpack:///.././src/*": "${webRoot}/src/*",
-        "webpack:///../../../src/*": "${webRoot}/src/*",
-        "webpack:///../../../../src/*": "${webRoot}/src/*",
-        "webpack:///../../../../../src/*": "${webRoot}/src/*"
-      },
-      "runtimeArgs": [
-        "--remote-debugging-port=9222",
-        "--user-data-dir=${workspaceFolder}/.vscode/chrome"
+        "-incognito"
       ]
     }
   ]
